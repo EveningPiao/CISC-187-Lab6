@@ -22,7 +22,7 @@ A queue is empty when Head equals Tail. If Head == Tail, there is no data   betw
 Overflow occurs when trying to add an element to a queue that has no available slots.  
 A queue is full when (Tail + 1) equals Head. If moving the Tail forward by one position, Tail hitting the Head.
 4.  
-  
+'''  
 // Adds to the front (decrements head)
 PUSH-FRONT(D, x)
     if D.head == 1
@@ -63,3 +63,4 @@ POP-BACK(D)
     else
         D.tail = D.tail - 1
     return D[D.tail]
+'''
